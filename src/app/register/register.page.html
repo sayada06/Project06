@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="purple">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light" >Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <ion-card>
+    <div class="text-center">
+      <h2>สมัครสมาชิก</h2>
+      <div class="ion-padding">
+        <ion-input label="Name" type="text" [(ngModel)]="txtname" class="mt-4" fill="solid"></ion-input>
+        <ion-input label="Email" type="email" [(ngModel)]="txtemail" class="mt-4" fill="solid"></ion-input>
+        <ion-input label="Username" type="text" [(ngModel)]="txtusername" class="mt-4" fill="solid"></ion-input>
+        <ion-input label="Password" type="password" [(ngModel)]="txtpassword" class="mt-4" fill="solid"></ion-input>
+      </div>
+      <ion-button expand="block" class="mt-4" color="primary" (click)="register()">Register</ion-button>
+      <ion-button expand="block" class="mt-4" color="primary" (click)="gotohome()">Login</ion-button>
+    </div>
+  </ion-card>
+</ion-content>
